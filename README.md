@@ -52,7 +52,7 @@ Consider applying set theory to the red and blue regions here: https://tinyurl.c
 [anti-knight](#anti-knight)
 
 **Play online:**
-[CtC](https://tinyurl.com/2p9a9kx)
+[CtC](https://tinyurl.com/2p9a9kxh)
 [f-puzzles](https://f-puzzles.com/?id=ycenxedq)
 
 # Overconstrained 2
