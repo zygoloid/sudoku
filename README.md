@@ -101,6 +101,20 @@ No negative Kropki constraint: not all dots are necessarily given.
 [CtC](https://tinyurl.com/4xv3jc6d)
 [f-puzzles](https://f-puzzles.com/?id=y74otltk)
 
+# Thermo hypercube
+
+2022-02-03, designed for minimality, not as an interesting puzzle
+
+![](thermo-hypercube.png)
+
+**Rules:**
+[hypercube](#hypercube)
+[thermo](#thermo)
+
+**Play online:**
+[CtC](https://tinyurl.com/yc488r77)
+[f-puzzles](https://f-puzzles.com/?id=y8wrjhla)
+
 # Rules
 
 ## Standard
@@ -137,6 +151,10 @@ Digits within a cage may not repeat, and sum to the number in the upper-left cor
 The digits along a diagonal marked with a number sum to that number.
 
 **Note:** Digits on such a diagonal can repeat if allowed by other rules.
+
+## Thermo
+
+Digits increase along a thermometer away from the bulb.
 
 ## Diagonal
 

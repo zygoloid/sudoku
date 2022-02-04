@@ -2,6 +2,7 @@ oldGetSetTypes = getSetTypes;
 oldNumberOfSetsOfType = numberOfSetsOfType
 oldGetCellsInSet = getCellsInSet
 oldFormatSet = formatSet;
+oldGetCellsSeenByDisjointGroup = getCellsSeenByDisjointGroup;
 
 getSetTypes = function(){
     oldGetSetTypes();
@@ -57,4 +58,43 @@ formatSet = function(type, index){
     return oldFormatSet(type, index);
 }
 
-// TODO: getCellsSeenByCell
+// Pretend our slices are the disjoint group constraint.
+getCellsSeenByDisjointGroup = function(cell, returnIfFound){
+    var cells = oldGetCellsSeenByDisjointGroup(cell, returnIfFound);
+    if (returnIfFound) {
+        if (cells) return cells;
+        cells = [];
+    }
+
+    const cellIBoxOffset = cell.i % regionH;
+    const cellJBoxOffset = cell.j % regionW;
+    const cellIBox = (cell.i / regionH)|0;
+    const cellJBox = (cell.j / regionW)|0;
+
+    for (var iBox = 0; iBox < size / regionH; ++iBox) {
+        if (iBox == cellIBox) continue;
+        for (var jOffset = 0; jOffset < regionW; ++jOffset) {
+            if (jOffset == cellJBoxOffset) continue;
+            const i = iBox * regionH + cellIBoxOffset;
+            const j = cellJBox * regionW + jOffset;
+            const c = grid[i][j];
+            if (c.value === returnIfFound)
+                return c;
+            cells.push(c);
+        }
+    }
+    for (var jBox = 0; jBox < size / regionW; ++jBox) {
+        if (jBox == cellJBox) continue;
+        for (var iOffset = 0; iOffset < regionH; ++iOffset) {
+            if (iOffset == cellIBoxOffset) continue;
+            const i = cellIBox * regionH + iOffset;
+            const j = jBox * regionW + cellJBoxOffset;
+            const c = grid[i][j];
+            if (c.value === returnIfFound)
+                return c;
+            cells.push(c);
+        }
+    }
+
+    return returnIfFound ? null : cells;
+}
