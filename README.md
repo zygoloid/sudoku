@@ -120,6 +120,7 @@ No negative Kropki constraint: not all dots are necessarily given.
 2022-08-17, at Launceston Farm
 
 ![](farmhouse-killer.png)
+
 **Rules:**
 [killer](#killer)
 [arrow](#arrow)
