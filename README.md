@@ -115,6 +115,18 @@ No negative Kropki constraint: not all dots are necessarily given.
 [CtC](https://tinyurl.com/yc488r77)
 [f-puzzles](https://f-puzzles.com/?id=y8wrjhla)
 
+# Farmhouse killer
+
+2022-08-17, at Launceston Farm
+
+![](farmhouse-killer.png)
+**Rules:**
+[killer](#killer)
+[arrow](#arrow)
+
+**Play online:**
+[CtC](https://tinyurl.com/5xx8n89k)
+
 # Rules
 
 ## Standard
