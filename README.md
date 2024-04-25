@@ -153,6 +153,9 @@ Choco banana: Shade some cells to form some shaded and unshaded orthogonally con
 
 The puzzle has a unique solution.
 
+**Play online:**
+[CtC](https://sudokupad.app/8f5imhpieq)
+
 # Rules
 
 ## Standard
