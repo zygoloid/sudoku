@@ -128,6 +128,31 @@ No negative Kropki constraint: not all dots are necessarily given.
 **Play online:**
 [CtC](https://tinyurl.com/5xx8n89k)
 
+# Suchoku
+
+2024-02-24, a mashup of Sudoku and a pencil puzzle
+
+![](suchoku.webp)
+
+**Rules:**
+[standard](#standard)
+[little killer](#little-killer)
+
+Choco banana: Shade some cells to form some shaded and unshaded orthogonally connected regions. Shaded regions must be rectangular. Unshaded regions must not be rectangular. Circled digits give the size of the enclosing region. Uncircled digits do not.
+
+**Play online:**
+[CtC](https://app.crackingthecryptic.com/ujsjiugpc7)
+
+# Paradox lost
+
+![](paradox-lost.webp)
+
+**Rules:**
+[standard](#standard)
+[fog of war](#fog-of-war)
+
+The puzzle has a unique solution.
+
 # Rules
 
 ## Standard
@@ -182,3 +207,7 @@ The marked areas are clones of each other, and contain the same digits in the sa
 Digits separated by a white dot have a difference of 1.
 Digits separated by a black dot have a ratio of 2.
 Unless otherwise specified, all such dots are given.
+
+## Fog of war
+
+The grid is initially partially covered in fog. Entering digits clears the fog surrounding the entered digit.
